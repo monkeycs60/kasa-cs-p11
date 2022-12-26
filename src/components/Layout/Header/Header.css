@@ -9,6 +9,12 @@
 header {
   padding: 5%;
 }
+header #Logo-Desktop {
+  display: block;
+}
+header #Logo-Mobile {
+  display: none;
+}
 header div {
   display: flex;
   align-items: center;
