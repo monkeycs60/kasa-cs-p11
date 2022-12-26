@@ -1,12 +1,12 @@
 import React from "react";
+import Banner from "../../components/Banner/Banner";
 
 const HomePage = () => {
-    return (
-        <div>
-        <h2>Home</h2>
-        <p>This app uses React.</p>
-        </div>
-    );
-    }
+  return (
+    <React.Fragment>
+      <Banner />
+    </React.Fragment>
+  );
+};
 
 export default HomePage;

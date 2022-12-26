@@ -4,32 +4,31 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: "Montserrat", sans-serif;
 }
 
-header {
-  padding: 5%;
-}
-header #Logo-Desktop {
-  display: block;
-}
-header #Logo-Mobile {
-  display: none;
-}
-header div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-header ul {
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 1.5em;
-}
-header ul a {
-  text-decoration: none;
-  color: #FF6060;
-  font-size: 0.8em;
-  font-weight: 500;
+@media (max-width: 768px) {
+  header {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header #Logo-Header-Desktop {
+    display: none;
+  }
+  header #Logo-Header-Mobile {
+    display: block;
+  }
+  header nav {
+    display: flex;
+    gap: 1em;
+  }
+  header nav a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #FF6060;
+    text-transform: uppercase;
+  }
 }

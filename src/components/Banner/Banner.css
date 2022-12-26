@@ -1,0 +1,21 @@
+.banner {
+  padding: 7%;
+  margin: 2% 5%;
+  background-color: rgb(160, 160, 160);
+  background-image: url("../../assets/Banner-Mobile.png");
+  background-size: cover;
+  border-radius: 10px;
+  background-blend-mode: multiply;
+}
+.banner h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+@media (min-width: 769px) {
+  .banner h1 {
+    white-space: nowrap;
+  }
+}

@@ -5,35 +5,36 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
+// Mobile version
+@media (max-width: 768px) {
 header {
-    padding: 5%;
-
-    #Logo-Desktop {
-        display: block;
-    }
-    #Logo-Mobile {
-        display: none;
-    }
-    
-    div {
+        padding: 5%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-  
-    ul {
-        font-family: 'Montserrat', sans-serif;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        gap: 1.5em;
-       a {
-        text-decoration: none;
-        color: #FF6060;
-        font-size: 0.8em;
-        font-weight: 500;
-       }
-    }
+            
+        #Logo-Header-Desktop {
+            display: none;
+        }
+        #Logo-Header-Mobile {
+            display: block;
+        }
+        nav {
+            display: flex;
+            gap: 1em;
+
+            a {
+             font-family: 'Montserrat', sans-serif;
+             font-size: 0.9em;
+             text-decoration: none;
+             color: #FF6060;
+             text-transform: uppercase;
+            }   
+        }
 }
+
+}
+

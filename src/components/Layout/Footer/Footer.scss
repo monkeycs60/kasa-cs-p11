@@ -4,3 +4,25 @@
     padding: 0;
     list-style: none;
 }
+
+footer {
+    padding: 10% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    gap: 15px;
+
+    #Logo-Footer-Desktop {
+        display: none;
+    }
+    #Logo-Footer-Mobile {
+        display: block;
+    }
+    p {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.8em;
+    }
+}
