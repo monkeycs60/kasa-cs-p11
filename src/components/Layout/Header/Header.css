@@ -26,6 +26,14 @@ header nav a {
   text-transform: uppercase;
 }
 
+@media (max-width: 350px) {
+  header nav {
+    gap: 0.5em;
+  }
+  header nav a {
+    font-size: 0.6em;
+  }
+}
 @media (min-width: 769px) {
   header #Logo-Header-Desktop {
     display: block;

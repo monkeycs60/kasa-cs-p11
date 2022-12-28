@@ -29,6 +29,18 @@ header {
         }
 }
 
+// Mini mobile version
+@media (max-width: 350px) {
+header {
+    nav {
+        gap: 0.5em;
+        a {
+            font-size: 0.6em;
+        }
+    }
+}
+}
+
 // Desktop version
 @media (min-width: 769px) {
 header {
