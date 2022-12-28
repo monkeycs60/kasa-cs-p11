@@ -1,3 +1,26 @@
+@media (min-width: 769px) {
+  header {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header #Logo-Header-Desktop {
+    display: block;
+  }
+  header #Logo-Header-Mobile {
+    display: none;
+  }
+  header nav {
+    display: flex;
+    gap: 4em;
+  }
+  header nav a {
+    font-size: 1.6em;
+    text-decoration: none;
+    color: #FF6060;
+  }
+}
 @media (max-width: 768px) {
   header {
     padding: 5%;
