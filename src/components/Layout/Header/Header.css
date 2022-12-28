@@ -1,3 +1,7 @@
+.activeRoute {
+  text-decoration: underline;
+}
+
 @media (min-width: 769px) {
   header {
     padding: 5%;
@@ -21,28 +25,26 @@
     color: #FF6060;
   }
 }
-@media (max-width: 768px) {
-  header {
-    padding: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  header #Logo-Header-Desktop {
-    display: none;
-  }
-  header #Logo-Header-Mobile {
-    display: block;
-  }
-  header nav {
-    display: flex;
-    gap: 1em;
-  }
-  header nav a {
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.9em;
-    text-decoration: none;
-    color: #FF6060;
-    text-transform: uppercase;
-  }
+header {
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #Logo-Header-Desktop {
+  display: none;
+}
+header #Logo-Header-Mobile {
+  display: block;
+}
+header nav {
+  display: flex;
+  gap: 1em;
+}
+header nav a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #FF6060;
+  text-transform: uppercase;
 }

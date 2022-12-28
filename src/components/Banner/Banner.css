@@ -1,3 +1,8 @@
+@media (min-width: 769px) {
+  span {
+    display: inline !important;
+  }
+}
 .banner {
   padding: 7%;
   margin: 2% 5%;
@@ -13,9 +18,6 @@
   font-size: 1.5em;
   line-height: 1;
 }
-
-@media (min-width: 769px) {
-  .banner h1 {
-    white-space: nowrap;
-  }
+.banner span {
+  display: block;
 }
