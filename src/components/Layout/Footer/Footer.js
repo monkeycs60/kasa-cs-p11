@@ -6,7 +6,6 @@ import { ReactComponent as LogoFooterMobile } from "../../../assets/LOGO-footer-
 const Footer = () => {
   return (
     <footer>
-      <LogoFooterDesktop id="Logo-Footer-Desktop" />
       <LogoFooterMobile id="Logo-Footer-Mobile" />
       <p>© 2020 Kasa. All rights reserved</p>
     </footer>

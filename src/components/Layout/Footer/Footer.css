@@ -1,14 +1,11 @@
 footer {
-  padding: 10% 0%;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: black;
   gap: 15px;
-}
-footer #Logo-Footer-Desktop {
-  display: none;
 }
 footer #Logo-Footer-Mobile {
   display: block;
@@ -17,4 +14,13 @@ footer p {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
+}
+
+@media (min-width: 769px) {
+  footer {
+    gap: 30px;
+  }
+  footer p {
+    font-size: 1.2em;
+  }
 }
