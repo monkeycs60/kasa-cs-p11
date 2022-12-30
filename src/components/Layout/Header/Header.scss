@@ -4,7 +4,7 @@
 
 // Mobile version
 header {
-        padding: 5%;
+        padding: 3% 5%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -51,8 +51,11 @@ header {
             display: none;
         }
          nav {
-            gap: 3.5em;
+            gap: 3em;
             font-size: 1.6em;
+           a {
+             text-transform: capitalize;
+           }
         }
 }
 }

@@ -1,13 +1,16 @@
 // Mobile version
 footer {
-    // padding: 10% 0%;
-    height: 200px;
+    height: 170px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: black;
     gap: 15px;
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
     #Logo-Footer-Mobile {
         display: block;

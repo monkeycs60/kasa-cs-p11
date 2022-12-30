@@ -3,7 +3,7 @@
 }
 
 header {
-  padding: 5%;
+  padding: 3% 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,7 +42,10 @@ header nav a {
     display: none;
   }
   header nav {
-    gap: 3.5em;
+    gap: 3em;
     font-size: 1.6em;
+  }
+  header nav a {
+    text-transform: capitalize;
   }
 }

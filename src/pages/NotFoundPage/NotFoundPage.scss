@@ -1,0 +1,56 @@
+// Mobile version
+.error-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 67vh;
+    gap: 8vh;
+
+    .error-display__center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        h2 {
+            font-size: 5em;
+            font-weight: 600;
+            text-align: center;
+        }
+        p {
+            width: 70%;
+            text-align: center;
+        }
+    }
+    .error-display__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2em;
+        font-size: 0.8em;
+    }
+
+}
+
+// Desktop version
+@media (min-width: 769px) {
+.error-display {
+    height: 53vh;
+    .error-display__center {
+        h2 {
+            font-size: 10em;
+        }
+        p {
+            font-size: 2em;
+            width: 100%;
+        }
+    }
+    .error-display__bottom {
+        font-size: 1.1em;
+    }
+}
+
+
+}

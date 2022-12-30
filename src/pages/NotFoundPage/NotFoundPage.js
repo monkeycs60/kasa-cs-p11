@@ -1,10 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./NotFoundPage.css";
 
 const NotFoundPage = () => {
   return (
-    <div>
-      <h2>Erreur 404</h2>
-      <p>La page demandée est introuvable.</p>
+    <div className="error-display">
+      <div className="error-display__center">
+        <h2>404</h2>
+        <p>Oups! La page que vous demandez n'existe pas.</p>
+      </div>
+      <div className="error-display__bottom">
+        <Link to="/">Retourner sur la page d'accueil</Link>
+      </div>
     </div>
   );
 };

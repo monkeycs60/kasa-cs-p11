@@ -1,10 +1,10 @@
 import React from 'react';
+import Banner from '../../components/Banner/Banner';
 
 const AboutPage = () => {
     return (
         <div>
-        <h2>About</h2>
-        <p>This app uses React.</p>
+        <Banner />
         </div>
     );
     }

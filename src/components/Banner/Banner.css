@@ -15,11 +15,14 @@
 }
 .banner span {
   display: block;
+  color: #FFFFFF;
 }
 
 @media (min-width: 769px) {
   .banner {
+    margin: 1% 5%;
     background-image: url("../../assets/Banner-Desktop.png");
+    background-size: cover;
     border-radius: 25px;
     font-size: 1.7em;
     display: flex;
