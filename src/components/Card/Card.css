@@ -1,0 +1,30 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 5%;
+  gap: 1em;
+}
+.card-grid .card-item {
+  position: relative;
+}
+.card-grid .card-item img {
+  border-radius: 10px;
+  width: 100%;
+}
+.card-grid .card-item div {
+  width: 70%;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+.card-grid .card-item div p {
+  padding: 5px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.241), rgba(0, 0, 0, 0.366));
+  background-size: 100% auto;
+  width: fit-content;
+  font-size: 1em;
+  font-weight: 600;
+  z-index: 2;
+  color: white;
+  border-radius: 5px;
+}
