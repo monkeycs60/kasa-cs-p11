@@ -6,25 +6,32 @@
 }
 .card-grid .card-item {
   position: relative;
+  height: 255px;
 }
 .card-grid .card-item img {
   border-radius: 10px;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .card-grid .card-item div {
-  width: 70%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.241), rgba(0, 0, 0, 0.366));
+  background-size: 100% auto;
+  border-radius: 5px;
+  width: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  flex: 1;
   position: absolute;
-  bottom: 5%;
-  left: 5%;
+  bottom: 20px;
+  left: 10px;
+  right: 10px;
 }
 .card-grid .card-item div p {
   padding: 5px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.241), rgba(0, 0, 0, 0.366));
-  background-size: 100% auto;
-  width: fit-content;
+  z-index: 2;
   font-size: 1em;
   font-weight: 600;
-  z-index: 2;
   color: white;
-  border-radius: 5px;
 }
