@@ -1,0 +1,36 @@
+.banner {
+  padding: 7%;
+  margin: 2% 5%;
+  background-color: rgb(177, 177, 177);
+  background-image: url("../../assets/about-banner-mobile.png");
+  background-size: cover;
+  background-position: 10%;
+  height: 200px;
+  border-radius: 10px;
+  background-blend-mode: multiply;
+}
+.banner h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1;
+}
+.banner span {
+  display: block;
+  color: #FFFFFF;
+}
+
+@media (min-width: 769px) {
+  .banner {
+    margin: 1% 5%;
+    background-image: url("../../assets/about-banner-desktop.png");
+    background-size: cover;
+    border-radius: 25px;
+    font-size: 1.7em;
+    display: flex;
+    justify-content: center;
+  }
+  .banner span {
+    display: inline;
+  }
+}

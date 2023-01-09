@@ -1,12 +1,12 @@
 import React from 'react';
-import Banner from '../../components/Banner/Banner';
+import AboutBanner from '../../components/AboutBanner/AboutBanner';
 import Collapse from '../../components/Collapse/Collapse';
 import './AboutPage.css';
 
 const AboutPage = () => {
     return (
       <div>
-        <Banner />
+      <AboutBanner />
         <div className="MenuCollapse">
           <Collapse
             title="Fiabilité"

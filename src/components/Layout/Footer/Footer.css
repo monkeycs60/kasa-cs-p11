@@ -6,6 +6,7 @@ footer {
   justify-content: center;
   background: black;
   gap: 15px;
+  margin-top: 2em;
 }
 footer #Logo-Footer-Mobile {
   display: block;
