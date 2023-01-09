@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import chevronDown from "../../assets/chevron-down-solid.svg";
-import chevronUp from "../../assets/chevron-up-solid.svg";
+import chevronDown from "../../assets/chevron-white-down.svg";
+import chevronUp from "../../assets/chevron-white-up.svg";
 import "./Collapse.css";
 
-const Dropdown = ({ title, text }) => {
+const Collapse = ({ title, text }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const [chevron, setChevron] = useState(chevronDown);
 
@@ -29,4 +29,4 @@ const Dropdown = ({ title, text }) => {
   );
 };
 
-export default Dropdown;
+export default Collapse;
