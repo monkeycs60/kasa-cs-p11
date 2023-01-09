@@ -1,0 +1,32 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 96, 96);
+  width: 75%;
+  margin: 1em;
+  border-radius: 5px;
+}
+.dropdown .TitlePannel {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: 5px;
+}
+.dropdown .TitlePannel h3 {
+  color: white;
+}
+.dropdown .TitlePannel img {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+.dropdown p {
+  background: rgb(246, 246, 246);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 1.5em 1em 1em 1em;
+}
+
+.chevron {
+  color: white !important;
+}
