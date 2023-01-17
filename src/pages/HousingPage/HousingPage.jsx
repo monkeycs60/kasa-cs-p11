@@ -5,13 +5,14 @@ import "./HousingPage.css";
 import emptyStar from "../../assets/empty-star.svg";
 import fullStar from "../../assets/plain-star.svg";
 import Collapse from "../../components/Collapse/Collapse";
+import HousingGallery from "../../components/HousingGallery/HousingGallery";
 
 const HousingPage = () => {
   const { id } = useParams();
   const item = data.find((item) => item.id === id);
   return (
     <div className="housing-page">
-      <img src={item.cover} alt={item.title} />
+      <HousingGallery pictures={item.pictures} />
       <div className="lower-card-text">
         <h1>{item.title}</h1>
         <p>{item.location}</p>
@@ -55,14 +56,17 @@ const HousingPage = () => {
         </div>
         <div className="collapse-items">
           <Collapse title="Description" text={item.description} />
-          <Collapse title="Équipements" text={
-            <ul>
+          <Collapse
+            title="Équipements"
+            text={
+              <ul>
                 {item.equipments.map((equipment, index) => (
-                    // rome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-<li key={index}>{equipment}</li>
+                  // rome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                  <li key={index}>{equipment}</li>
                 ))}
-            </ul>
-          } />
+              </ul>
+            }
+          />
         </div>
       </div>
     </div>
