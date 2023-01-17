@@ -4,6 +4,7 @@
   width: 90%;
   margin: 1em;
   border-radius: 5px;
+  cursor: pointer;
 }
 .dropdown .TitlePannel {
   background: rgb(255, 96, 96);
