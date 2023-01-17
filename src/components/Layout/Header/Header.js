@@ -7,8 +7,18 @@ import { ReactComponent as LogoHeaderMobile } from "../../../assets/LOGO-header-
 const Header = () => {
   return (
     <header>
-      <LogoHeaderDesktop id="Logo-Header-Desktop" />
-      <LogoHeaderMobile id="Logo-Header-Mobile" />
+      <NavLink
+        to={"/"}
+        className={({ isActive }) => (isActive ? "activeRoute" : undefined)}
+      >
+        <LogoHeaderDesktop id="Logo-Header-Desktop" />
+      </NavLink>
+      <NavLink
+        to={"/"}
+        className={({ isActive }) => (isActive ? "activeRoute" : undefined)}
+      >
+        <LogoHeaderMobile id="Logo-Header-Mobile" />
+      </NavLink>
       <nav>
         <NavLink
           to={"/"}
