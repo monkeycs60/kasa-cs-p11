@@ -4,3 +4,14 @@
   align-items: center;
   width: 100%;
 }
+
+@media (min-width: 769px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 72vh;
+  }
+  .about-container .MenuCollapse {
+    flex: 1;
+  }
+}

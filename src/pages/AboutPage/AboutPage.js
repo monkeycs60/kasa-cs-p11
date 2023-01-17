@@ -5,7 +5,7 @@ import './AboutPage.css';
 
 const AboutPage = () => {
     return (
-      <div>
+      <div className='about-container'>
       <AboutBanner />
         <div className="MenuCollapse">
           <Collapse
