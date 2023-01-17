@@ -1,5 +1,5 @@
 // Mobile version
-.banner {
+.about-banner {
     padding: 7%;
     margin: 2% 5%;
     background-color: rgb(177, 177, 177);
@@ -23,7 +23,7 @@
 
 // Desktop version
 @media (min-width: 769px) {
-  .banner {
+  .about-banner {
     margin: 1% 5%;
     background-image: url("../../assets/about-banner-desktop.png");
     background-size: cover;

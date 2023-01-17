@@ -1,4 +1,4 @@
-.banner {
+.about-banner {
   padding: 7%;
   margin: 2% 5%;
   background-color: rgb(177, 177, 177);
@@ -9,19 +9,19 @@
   border-radius: 10px;
   background-blend-mode: multiply;
 }
-.banner h1 {
+.about-banner h1 {
   color: white;
   font-weight: 400;
   font-size: 1.5em;
   line-height: 1;
 }
-.banner span {
+.about-banner span {
   display: block;
   color: #FFFFFF;
 }
 
 @media (min-width: 769px) {
-  .banner {
+  .about-banner {
     margin: 1% 5%;
     background-image: url("../../assets/about-banner-desktop.png");
     background-size: cover;
@@ -30,7 +30,7 @@
     display: flex;
     justify-content: center;
   }
-  .banner span {
+  .about-banner span {
     display: inline;
   }
 }
