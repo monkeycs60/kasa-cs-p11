@@ -24,7 +24,7 @@ const Collapse = ({ title, text }) => {
         <h3>{title}</h3>
         <img src={chevron} alt="Chevron" className="chevron" />
       </div>
-      <div className="HiddenText">{!isCollapsed && <p>{text}</p>}</div>
+      <div className="HiddenText">{!isCollapsed && <div className="writing">{text}</div>}</div>
     </div>
   );
 };
