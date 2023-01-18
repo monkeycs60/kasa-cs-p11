@@ -7,12 +7,21 @@
   justify-content: center;
   gap: 0.8em;
 }
+.housing-page .lower-card-text .desktop-box {
+  display: flex;
+  flex-direction: column;
+}
+.housing-page .lower-card-text .desktop-box .desktop-box__titles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
 .housing-page .lower-card-text h2 {
   font-size: 1.4em;
   font-weight: 500;
 }
 .housing-page .host-stars {
-  margin: 0.5em 0;
+  margin: 1em 0 0 0;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -39,6 +48,25 @@
 }
 
 @media (width >= 769px) {
+  .housing-page .lower-card-text .desktop-box {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .housing-page .lower-card-text .desktop-box .desktop-box__titles {
+    gap: 0.8em;
+  }
+  .housing-page .host-stars {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  .housing-page .host-stars .host p {
+    font-size: 1.2em;
+  }
+  .housing-page .host-stars .host img {
+    width: 60px;
+    height: 60px;
+  }
   .housing-page .collapse-items {
     display: flex;
     justify-content: space-between;

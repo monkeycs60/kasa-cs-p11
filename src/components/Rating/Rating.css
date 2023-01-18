@@ -1,3 +1,9 @@
 .stars img {
   width: 20px;
 }
+
+@media (width >= 769px) {
+  .stars img {
+    width: 30px;
+  }
+}

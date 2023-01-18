@@ -16,15 +16,21 @@ const HousingPage = () => {
     <div className="housing-page">
       <HousingGallery pictures={item.pictures} />
       <div className="lower-card-text">
-        <h2>{item.title}</h2>
-        <p>{item.location}</p>
-        <TagsContainer tags={item.tags} />
-        <div className="host-stars">
-          <div className="host">
-            <img src={item.host.picture} alt={item.host.name} />
-            <p>{item.host.name}</p>
+        <div className="desktop-box">
+          <div className="desktop-box__titles">
+            <h2>{item.title}</h2>
+            <p>{item.location}</p>
+            <TagsContainer tags={item.tags} />
           </div>
-          <Rating item={item} fullStar={fullStar} emptyStar={emptyStar} />
+          <div className="desktop-box__profile">
+            <div className="host-stars">
+              <div className="host">
+                <img src={item.host.picture} alt={item.host.name} />
+                <p>{item.host.name}</p>
+              </div>
+              <Rating item={item} fullStar={fullStar} emptyStar={emptyStar} />
+            </div>
+          </div>
         </div>
         <div className="collapse-items">
           <Collapse title="Description" text={item.description} type="text" />

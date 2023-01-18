@@ -20,3 +20,15 @@
     }
  }
 }
+
+@media (width >= 769px) {
+  .tags-container {
+    .tag {
+      p {
+      font-size: 0.8em;
+      width: 120px;
+      }
+    }
+  }
+
+}
