@@ -48,6 +48,9 @@
 }
 
 @media (width >= 769px) {
+  .housing-page .lower-card-text h2 {
+    font-size: 1.8em;
+  }
   .housing-page .lower-card-text .desktop-box {
     flex-direction: row;
     justify-content: space-between;
