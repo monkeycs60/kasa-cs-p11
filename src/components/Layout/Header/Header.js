@@ -11,12 +11,12 @@ const classNameResolver = ({ isActive }) => {
 const Header = () => {
   return (
     <header>
-      <NavLink to={"/"} className={classNameResolver}>
+       <NavLink to={"/"} className={classNameResolver}> 
         <LogoHeaderDesktop id="Logo-Header-Desktop" />
       </NavLink>
-      <NavLink to={"/"} className={classNameResolver}>
+       <NavLink to={"/"} className={classNameResolver}> 
         <LogoHeaderMobile id="Logo-Header-Mobile" />
-      </NavLink>
+       </NavLink> 
       <nav>
         <NavLink to={"/"} className={classNameResolver}>
           Accueil

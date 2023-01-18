@@ -26,6 +26,10 @@ header nav a {
   text-transform: uppercase;
 }
 
+header > *:nth-child(2) {
+  flex: 1;
+}
+
 @media (max-width: 350px) {
   header nav {
     gap: 0.5em;
@@ -34,7 +38,7 @@ header nav a {
     font-size: 0.6em;
   }
 }
-@media (min-width: 769px) {
+@media (width >= 769px) {
   header #Logo-Header-Desktop {
     display: block;
   }

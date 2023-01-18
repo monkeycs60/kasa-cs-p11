@@ -8,13 +8,15 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-            
+ 
+
         #Logo-Header-Desktop {
             display: none;
         }
         #Logo-Header-Mobile {
             display: block;
         }
+    
         nav {
             display: flex;
             gap: 1em;
@@ -27,6 +29,12 @@ header {
              text-transform: uppercase;
             }   
         }
+}
+
+
+// Handle the logo mobile
+header > *:nth-child(2) {
+  flex: 1;
 }
 
 // Mini mobile version
@@ -42,14 +50,14 @@ header {
 }
 
 // Desktop version
-@media (min-width: 769px) {
-header {
-     #Logo-Header-Desktop {
-            display: block;
-        }
-        #Logo-Header-Mobile {
-            display: none;
-        }
+@media (width >= 769px) {
+    header {
+    #Logo-Header-Desktop {
+           display: block;
+       }
+       #Logo-Header-Mobile {
+           display: none;
+       }
          nav {
             gap: 3em;
             font-size: 1.6em;
