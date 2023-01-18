@@ -7,6 +7,7 @@ import fullStar from "../../assets/plain-star.svg";
 import Collapse from "../../components/Collapse/Collapse";
 import HousingGallery from "../../components/HousingGallery/HousingGallery";
 import Rating from "../../components/Rating/Rating";
+import TagsContainer from "../../components/TagsContainer/TagsContainer";
 
 const HousingPage = () => {
   const { id } = useParams();
@@ -17,14 +18,7 @@ const HousingPage = () => {
       <div className="lower-card-text">
         <h1>{item.title}</h1>
         <p>{item.location}</p>
-        <div className="tags-container">
-          {item.tags.map((tag, index) => (
-            // rome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-            <div className="tag" key={index}>
-              <p>{tag}</p>
-            </div>
-          ))}
-        </div>
+        <TagsContainer tags={item.tags} />
         <div className="host-stars">
           <div className="host">
             <img src={item.host.picture} alt={item.host.name} />
