@@ -16,7 +16,7 @@ const HousingPage = () => {
     <div className="housing-page">
       <HousingGallery pictures={item.pictures} />
       <div className="lower-card-text">
-        <h1>{item.title}</h1>
+        <h2>{item.title}</h2>
         <p>{item.location}</p>
         <TagsContainer tags={item.tags} />
         <div className="host-stars">

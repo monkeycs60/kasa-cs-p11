@@ -1,3 +1,39 @@
 .housing-page {
-    
+    margin: 0 5%;
+    .lower-card-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.8em;
+    h2 {
+        font-size: 1.4em;
+        font-weight: 500;
+    }
+    }
+    .host-stars {
+        margin: 0.5em 0;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        .host {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 1em;
+            p {
+                width: 80px;
+                font-size: 0.9em;
+                display: inline-block;
+                text-align: right;
+                white-space: pre-line;
+            }
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 0.5em;
+            }
+        }
+    }
 }

@@ -1,0 +1,19 @@
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tags-container .tag p {
+  background: rgb(255, 96, 96);
+  color: rgb(255, 255, 255);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  font-size: 0.6em;
+  width: 100px;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 1.8em;
+}
