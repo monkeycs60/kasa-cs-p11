@@ -36,7 +36,7 @@
   color: white;
 }
 
-@media (min-width: 769px) {
+@media (width >= 769px) {
   .card-grid {
     padding: 3.5em;
     grid-template-columns: 1fr 1fr 1fr;
@@ -45,6 +45,7 @@
     border-radius: 25px;
   }
   .card-grid .card-item {
+    color: blue;
     height: 100%;
   }
   .card-grid .card-item img {

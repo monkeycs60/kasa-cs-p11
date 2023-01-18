@@ -6,6 +6,7 @@ import emptyStar from "../../assets/empty-star.svg";
 import fullStar from "../../assets/plain-star.svg";
 import Collapse from "../../components/Collapse/Collapse";
 import HousingGallery from "../../components/HousingGallery/HousingGallery";
+import Rating from "../../components/Rating/Rating";
 
 const HousingPage = () => {
   const { id } = useParams();
@@ -29,30 +30,7 @@ const HousingPage = () => {
             <img src={item.host.picture} alt={item.host.name} />
             <p>{item.host.name}</p>
           </div>
-          <div className="stars">
-            {Array(5)
-              .fill()
-              .map((_, i) => (
-                <img
-                  src={i < item.rating ? fullStar : emptyStar}
-                  alt={`star-${i}`}
-                  // rome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-                  key={i}
-                />
-              ))}
-          </div>
-          {/* <div className="stars">
-            {item.rating > 0 && <img src={fullStar} alt="full star" />}
-            {item.rating > 1 && <img src={fullStar} alt="full star" />}
-            {item.rating > 2 && <img src={fullStar} alt="full star" />}
-            {item.rating > 3 && <img src={fullStar} alt="full star" />}
-            {item.rating > 4 && <img src={fullStar} alt="full star" />}
-            {item.rating < 5 && <img src={emptyStar} alt="empty star" />}
-            {item.rating < 4 && <img src={emptyStar} alt="empty star" />}
-            {item.rating < 3 && <img src={emptyStar} alt="empty star" />}
-            {item.rating < 2 && <img src={emptyStar} alt="empty star" />}
-            {item.rating < 1 && <img src={emptyStar} alt="empty star" />}
-          </div> */}
+          <Rating item={item} fullStar={fullStar} emptyStar={emptyStar} />
         </div>
         <div className="collapse-items">
           <Collapse title="Description" text={item.description} />

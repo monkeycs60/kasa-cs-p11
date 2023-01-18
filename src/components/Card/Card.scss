@@ -14,8 +14,6 @@
       object-fit: cover;
     }
     div {
-      // opacity: 0.25;
-      // background-color: black;
       background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.241), rgba(0, 0, 0, 0.366));
       background-size: 100% auto;
       border-radius: 10px;
@@ -40,7 +38,7 @@
 }
 
 // Desktop version
-@media (min-width: 769px) {
+@media (width >= 769px) {
   .card-grid {
     padding: 3.5em;
     grid-template-columns: 1fr 1fr 1fr;
@@ -48,6 +46,7 @@
     background: rgba(246, 246, 246, 1);
     border-radius: 25px;
      .card-item {
+      color: blue;
       height: 100%;
     img {
             border-radius: 10px;
