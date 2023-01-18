@@ -37,3 +37,14 @@
         }
     }
 }
+
+//media queries
+@media (width >= 769px) {
+    .housing-page {
+   .collapse-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+   }
+}
+}
