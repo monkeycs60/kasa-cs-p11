@@ -18,6 +18,18 @@ const HousingGallery = ({ pictures }) => {
     );
   };
 
+  const Chevrons = () =>
+    pictures.length === 1 ? null : (
+      <div>
+        <button id="previous-button" onClick={handlePreviousClick}>
+          <img src={ChevronLeft} alt="Previous" />
+        </button>
+        <button id="next-button" onClick={handleNextClick}>
+          <img src={ChevronRight} alt="Next" />
+        </button>
+      </div>
+    );
+
   return (
     <div className="housing-gallery">
       <img
@@ -25,12 +37,7 @@ const HousingGallery = ({ pictures }) => {
         alt="Housing"
         className="gallery-image"
       />
-      <button id="previous-button" onClick={handlePreviousClick}>
-        <img src={ChevronLeft} alt="Previous" />
-      </button>
-      <button id="next-button" onClick={handleNextClick}>
-        <img src={ChevronRight} alt="Next" />
-      </button>
+      <Chevrons />
     </div>
   );
 };
