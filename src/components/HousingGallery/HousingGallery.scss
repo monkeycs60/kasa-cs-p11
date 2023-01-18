@@ -33,7 +33,7 @@ button {
 }
 
 
-// Desktop version
+// Tablet version
 @media (width >= 769px) {
     .housing-gallery {
         margin-top: 0;
@@ -44,5 +44,23 @@ button {
     button img {
         width: 50px;
     }
+}
+}
+
+// Desktop version
+@media (width >= 1400px) {
+    .housing-gallery {
+        .gallery-image {
+            height: 440px;
+        }
+}
+}
+
+// Wide screen
+@media (width >= 2000px) {
+    .housing-gallery {
+        .gallery-image {
+            height: 580px;
+        }
 }
 }
