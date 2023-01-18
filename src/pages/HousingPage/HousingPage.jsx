@@ -33,18 +33,8 @@ const HousingPage = () => {
           <Rating item={item} fullStar={fullStar} emptyStar={emptyStar} />
         </div>
         <div className="collapse-items">
-          <Collapse title="Description" text={item.description} />
-          <Collapse
-            title="Équipements"
-            text={
-              <ul>
-                {item.equipments.map((equipment, index) => (
-                  // rome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-                  <li key={index}>{equipment}</li>
-                ))}
-              </ul>
-            }
-          />
+          <Collapse title="Description" text={item.description} type="text" />
+          <Collapse title="Équipements" text={item.equipments} type="list" />
         </div>
       </div>
     </div>

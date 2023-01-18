@@ -3,7 +3,7 @@ import chevronDown from "../../assets/chevron-white-down.svg";
 import chevronUp from "../../assets/chevron-white-up.svg";
 import "./Collapse.css";
 
-const Collapse = ({ title, text }) => {
+const Collapse = ({ title, text, type }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const [chevron, setChevron] = useState(chevronDown);
 
@@ -24,7 +24,20 @@ const Collapse = ({ title, text }) => {
         <h3>{title}</h3>
         <img src={chevron} alt="Chevron" className="chevron" />
       </div>
-      <div className="HiddenText">{!isCollapsed && <div className="writing">{text}</div>}</div>
+      {!isCollapsed && (
+        <div className="HiddenText">
+          {type === "text" ? (
+            <p className="writing-txt">{text}</p>
+          ) : (
+            <ul className="list-text">
+              {text.map((item, index) => (
+                // rome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
     </div>
   );
 };
