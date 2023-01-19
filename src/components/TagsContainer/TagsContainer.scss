@@ -30,5 +30,17 @@
       }
     }
   }
+}
 
+@media (width >= 2000px) {
+  .tags-container {
+    gap: 1.5em;
+    .tag {
+      p {
+        margin-top: 1em;
+      font-size: 0.9em;
+      width: 180px;
+      }
+    }
+  }
 }

@@ -84,3 +84,39 @@
    }
 }
 }
+
+@media (width >= 2000px) {
+    .housing-page {
+ .lower-card-text {
+    gap: 1em;
+
+    .desktop-box {
+        .desktop-box__titles {
+            margin-bottom: 1em;
+        }
+    }
+             h2 {
+        font-size: 2.2em;
+    }
+    p {
+        font-size: 1.3em;
+    }
+    .host {
+        p {
+            font-size: 1.4em;
+        }
+    }
+    .host-stars {
+        gap: 2.5em;
+    }
+    .collapse-items {
+        h3 {
+            font-size: 1.3em;
+        }
+        li {
+            font-size: 1.3em;
+        }
+    }
+}
+}
+}

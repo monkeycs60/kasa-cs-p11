@@ -3,7 +3,16 @@
 }
 
 @media (width >= 769px) {
+  .stars {
+    display: flex;
+    gap: 0.6em;
+  }
   .stars img {
     width: 30px;
+  }
+}
+@media (width >= 2000px) {
+  .stars {
+    gap: 1em;
   }
 }
