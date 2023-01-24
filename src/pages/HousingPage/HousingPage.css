@@ -92,6 +92,9 @@
   .housing-page .lower-card-text p {
     font-size: 1.3em;
   }
+  .housing-page .lower-card-text .host {
+    gap: 2.5em;
+  }
   .housing-page .lower-card-text .host p {
     font-size: 1.4em;
   }
