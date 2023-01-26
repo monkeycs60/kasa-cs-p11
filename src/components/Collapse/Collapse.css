@@ -34,3 +34,17 @@
     padding: 1em;
   }
 }
+@media (min-width: 2000px) {
+  .dropdown {
+    width: 75%;
+  }
+  .dropdown .TitlePannel {
+    padding: 1em;
+  }
+  .dropdown .TitlePannel {
+    font-size: 1.2em;
+  }
+  .dropdown .HiddenText .writing-txt, .dropdown .HiddenText .list-text {
+    font-size: 1.4em;
+  }
+}

@@ -21,7 +21,6 @@
     }
 }
    .HiddenText {
-    //nth first child
     .writing-txt, .list-text {
     background: rgba(246, 246, 246, 1);
     padding: 1.5em 1em 1em 1em;
@@ -40,5 +39,21 @@
 }
 }
 
-
+// Desktop version
+@media (min-width: 2000px) {
+.dropdown {
+    width: 75%;
+    .TitlePannel {
+        padding: 1em;
+}
+.TitlePannel {
+    font-size: 1.2em;
+}
+.HiddenText {
+    .writing-txt, .list-text {
+font-size: 1.4em;
+    }
+}
+}
+}
 

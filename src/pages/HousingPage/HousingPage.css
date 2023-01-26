@@ -87,11 +87,14 @@
   .housing-page .lower-card-text .desktop-box .desktop-box__titles {
     margin-bottom: 1em;
   }
+  .housing-page .lower-card-text .desktop-box p {
+    font-size: 1.4em;
+  }
+  .housing-page .lower-card-text .desktop-box .tag p {
+    font-size: 0.9em;
+  }
   .housing-page .lower-card-text h2 {
     font-size: 2.2em;
-  }
-  .housing-page .lower-card-text p {
-    font-size: 1.3em;
   }
   .housing-page .lower-card-text .host {
     gap: 2.5em;
@@ -101,11 +104,5 @@
   }
   .housing-page .lower-card-text .host-stars {
     gap: 2.5em;
-  }
-  .housing-page .lower-card-text .collapse-items h3 {
-    font-size: 1.3em;
-  }
-  .housing-page .lower-card-text .collapse-items li {
-    font-size: 1.3em;
   }
 }

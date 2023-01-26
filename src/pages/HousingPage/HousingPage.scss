@@ -86,6 +86,7 @@
 }
 }
 
+// wide desktop version
 @media (width >= 2000px) {
     .housing-page {
  .lower-card-text {
@@ -95,12 +96,15 @@
         .desktop-box__titles {
             margin-bottom: 1em;
         }
+     p {
+            font-size: 1.4em;
+     }
+     .tag p {
+            font-size: 0.9em;
+     } 
     }
              h2 {
         font-size: 2.2em;
-    }
-    p {
-        font-size: 1.3em;
     }
     .host {
         gap: 2.5em;
@@ -110,14 +114,6 @@
     }
     .host-stars {
         gap: 2.5em;
-    }
-    .collapse-items {
-        h3 {
-            font-size: 1.3em;
-        }
-        li {
-            font-size: 1.3em;
-        }
     }
 }
 }
