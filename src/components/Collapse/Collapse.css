@@ -41,7 +41,7 @@
   .dropdown .TitlePannel {
     padding: 1em;
   }
-  .dropdown .TitlePannel {
+  .dropdown .TitlePannel p {
     font-size: 1.2em;
   }
   .dropdown .HiddenText .writing-txt, .dropdown .HiddenText .list-text {
