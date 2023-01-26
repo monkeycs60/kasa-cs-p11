@@ -68,6 +68,7 @@
   }
   .housing-page .host-stars .host p {
     font-size: 1.2em;
+    width: 120px;
   }
   .housing-page .host-stars .host img {
     width: 60px;
