@@ -53,3 +53,8 @@ header > *:nth-child(2) {
     text-transform: capitalize;
   }
 }
+@media (width >= 2000px) {
+  header nav a {
+    font-size: 1.15em;
+  }
+}
